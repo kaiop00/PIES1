@@ -14,6 +14,4 @@
 
 [Brainstorm](https://www.notion.so/Brainstorm-e4f112d4e04e4b6e8885649f76e44ea9)
 
-Link Repository: https://github.com/kaiop00/PIES1.git
-
 [Diagrama de Classes](https://www.notion.so/Diagrama-de-Classes-e0a0f60211724665b64282b3bf4de648)
