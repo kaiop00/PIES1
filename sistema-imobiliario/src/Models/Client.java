@@ -15,7 +15,6 @@ public class Client {
 		this.phone = phone;
 	}
 	
-	
 	public String getName() {
 		return name;
 	}
