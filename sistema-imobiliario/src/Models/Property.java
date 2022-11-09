@@ -56,10 +56,10 @@ public class Property {
 	public void setGarage(int garage) {
 		this.garage = garage;
 	}
-	public int getIsLocate() {
+	public Boolean getIsLocate() {
 		return isLocate;
 	}
-	public void setIsLocate(int isLocate) {
+	public void setIsLocate(Boolean isLocate) {
 		this.isLocate = isLocate;
 	}
 }
