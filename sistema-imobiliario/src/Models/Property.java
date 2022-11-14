@@ -7,7 +7,7 @@ public class Property {
 	private Double value;
 	private int room;
 	private int garage;
-	private boolean isLocate;
+	private Boolean isLocate;
 	
 	public Property(int id, String adress, Double area, Double value, int room, int garage) {
 		super();
@@ -23,42 +23,54 @@ public class Property {
 	public int getId() {
 		return id;
 	}
+	
 	public void setId(int id) {
 		this.id = id;
 	}
-	public void getAdress() {
+	
+	public String getAdress() {
 		return adress;
 	}
+	
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
-	public void getArea() {
+	
+	public Double getArea() {
 		return area;
 	}
+	
 	public void setArea(Double area) {
 		this.area = area;
 	}
-	public void getValue() {
+	
+	public Double getValue() {
 		return value;
 	}
+	
 	public void setValue(Double value) {
 		this.value = value;
 	}
+	
 	public int getRoom() {
 		return room;
 	}
+	
 	public void setRoom(int room) {
 		this.room = room;
 	}
+	
 	public int getGarage() {
 		return garage;
 	}
 	public void setGarage(int garage) {
 		this.garage = garage;
 	}
+	
 	public Boolean getIsLocate() {
 		return isLocate;
 	}
+	
 	public void setIsLocate(Boolean isLocate) {
 		this.isLocate = isLocate;
 	}

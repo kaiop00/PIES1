@@ -5,7 +5,7 @@ public class Attendant extends User {
 
 	public Attendant(String name, String cpf, String email, String password, Boolean isAttendant) {
 		super(name, cpf, email, password);
-		this.isAttendant = true;
+		this.isAttendant = isAttendant;
 	}
 
 	public Boolean getIsAttendant() {

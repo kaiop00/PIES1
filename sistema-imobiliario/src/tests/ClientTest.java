@@ -55,15 +55,15 @@ class ClientTest {
 	@Test
 	void testSetEmail() {
 		Client client = new Client("Jose","000000000","email@email.com","Rua X, 321","0000");
-		client.setEmail("email@email.com");
-		assertEquals("email@email.com",client.getEmail()); 
+		client.setEmail("email2@email.com");
+		assertEquals("email2@email.com",client.getEmail()); 
 	}
 	
 	@Test
 	void testSetAddress() {
 		Client client = new Client("Jose","000000000","email@email.com","Rua X, 321","0000");
 		client.setAdress("Av Maria, 1000");
-		assertEquals("Av Maria,1000",client.getAddress()); 
+		assertEquals("Av Maria, 1000",client.getAddress()); 
 	}
 	
 	@Test

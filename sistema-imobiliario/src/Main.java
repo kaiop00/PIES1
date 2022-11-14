@@ -42,7 +42,7 @@ public class Main {
 		
 	    public static void alterar(Scanner scan) {
 	    	System.out.println("Digite na sequencia o cpf, o campo e novo dado do campo que deseja alterar:");
-        	String array[] = new String[5];
+        	String array[] = new String[3];
         	for(int i = 0; i < 3; i++) {
         		array[i] = scan.next();
         	}

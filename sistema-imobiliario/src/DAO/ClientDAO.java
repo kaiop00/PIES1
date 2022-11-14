@@ -64,7 +64,7 @@ public class ClientDAO {
 	public static void getClient(String cpf) {
 		try {
 			db = new ConnectionDb();
-			String sql = "select from \"Client\" where cpf='" + cpf + "';";
+			String sql = "select * from \"Client\" where cpf='" + cpf + "';";
 						 
 			PreparedStatement st = db.getConnection().prepareStatement(sql);
 			st.execute();
