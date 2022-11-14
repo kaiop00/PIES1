@@ -8,7 +8,7 @@ import Models.Client;
 import Models.User;
 
 class UserTest {
-
+//Pensar como fazer os testes de usuário
 	
 	@Test
 	void testGetNameUser() {

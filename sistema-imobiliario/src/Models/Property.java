@@ -26,19 +26,19 @@ public class Property {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getAdress() {
+	public void getAdress() {
 		return adress;
 	}
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
-	public Double getArea() {
+	public void getArea() {
 		return area;
 	}
 	public void setArea(Double area) {
 		this.area = area;
 	}
-	public Double getValue() {
+	public void getValue() {
 		return value;
 	}
 	public void setValue(Double value) {

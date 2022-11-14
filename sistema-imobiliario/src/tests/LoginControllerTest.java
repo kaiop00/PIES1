@@ -11,35 +11,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Models.*;
-
-public class LoginControllerTest {
+class LoginControllerTest {
  
-	
-	private Client cli;
-	
-	//Adicionar Cliente e retornar
-	@Test
-	public void testeAdicionarNome() {
-		cli.setNome("Italo");
-		assertEquals("Italo", cli.getNome());
-	}
-	
-	@Test
-	//Impedir adicionar nome vazio "" no login
-	public void testeAdicionarNomeVazio() {
-		assertFalse(cli.setNome(""));
-	}
-	
-	@Test
-	//Impedir adicionar nome vazio null
-	public void testeAdicionarNomeVazioNull() {
-		assertFalse(cli.setNome(null));
-	}
-	
+/*
 	@Test
 	//Verificar Email
 	public void verificaSeEmailEValido(String email) {
         assertTrue(Email.validar(email));
+*/
    	
 }
