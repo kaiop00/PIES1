@@ -7,11 +7,6 @@ import org.junit.jupiter.api.Test;
 import Models.Client;
 
 class ClientTest {
-
-//	@Test
-//	void test() {
-//		fail("Not yet implemented");
-//	}
 	
 	@Test
 	void testGetName() {
