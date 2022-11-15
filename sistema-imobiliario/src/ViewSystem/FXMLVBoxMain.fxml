@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu fx:id="MenuCliente" mnemonicParsing="false" text="Clientes">
+            <items>
+              <MenuItem fx:id="ConsultarTodos" mnemonicParsing="false" text="Consultar Todos" />
+                  <MenuItem fx:id="ConsultarCliente" mnemonicParsing="false" text="Consultar Cliente" />
+                  <MenuItem fx:id="IncluirCliente" mnemonicParsing="false" text="Incluir Cliente" />
+                  <MenuItem fx:id="EditarCliente" mnemonicParsing="false" text="Editar Cliente" />
+                  <MenuItem fx:id="DeletarCliente" mnemonicParsing="false" text="Deletar Cliente" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Imóveis">
+            <items>
+              <MenuItem mnemonicParsing="false" text="" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="AnchorPane" prefHeight="375.0" prefWidth="600.0" />
+   </children>
+</VBox>
