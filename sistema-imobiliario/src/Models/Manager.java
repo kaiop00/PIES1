@@ -5,7 +5,7 @@ public class Manager extends User {
 
 	public Manager(String name, String cpf, String email, String password) {
 		super(name, cpf, email, password);
-		this.isManager = true;
+		super.setIsManager(true);
 	}
 	
 	public Boolean getIsManager() {

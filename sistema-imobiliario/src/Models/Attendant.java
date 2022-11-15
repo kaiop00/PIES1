@@ -3,9 +3,9 @@ package Models;
 public class Attendant extends User {
 	private Boolean isAttendant;
 
-	public Attendant(String name, String cpf, String email, String password, Boolean isAttendant) {
+	public Attendant(String name, String cpf, String email, String password) {
 		super(name, cpf, email, password);
-		this.isAttendant = true;
+		this.setIsManager(false);
 	}
 
 	public Boolean getIsAttendant() {

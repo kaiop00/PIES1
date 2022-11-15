@@ -1,11 +1,12 @@
 package Models;
 
-public abstract class  User {
+public class  User {
 	private int id;
 	private String name;	
 	private String cpf;
 	private String email;
 	private String password;
+	private boolean isManager; 
 	
 	public User(String name, String cpf, String email, String password) {
 		this.setName(name);
@@ -45,6 +46,14 @@ public abstract class  User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public boolean isManager() {
+		return isManager;
+	}
+
+	public void setIsManager(boolean isManager) {
+		this.isManager = isManager;
 	}
 
 	@Override

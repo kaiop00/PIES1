@@ -1,20 +1,19 @@
 package tests;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import Models.Client;
 import Models.User;
 
 class UserTest {
 //Pensar como fazer os testes de usuário
 	
-	@Test
-	void testGetNameUser() {
-		User usuario = new User("Italo","45789125357","email@gmail.com","senha123");
-		assertEquals("Italo",usuario.getName());
-	}
+//	@Test
+//	void testGetNameUser() {
+//		User usuario = new User("Italo","45789125357","email@gmail.com","senha123");
+//		assertEquals("Italo",usuario.getName());
+//	}
 	
 	//@Test
 	//void testSetNameUserVazio() {

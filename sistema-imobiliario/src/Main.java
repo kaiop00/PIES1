@@ -5,6 +5,7 @@ import java.util.Scanner;
 import DAO.ClientDAO;
 //import Database.ConnectionDb;
 //import Models.Client;
+import controllers.UserController;
 
 public class Main {
 
@@ -23,6 +24,7 @@ public class Main {
 	        System.out.println("3. Exclui");
 	        System.out.println("4. Consulta");
 	        System.out.println("Opcao:");
+	        
 	    }
 
 	    public static void incluir(Scanner scan) {
