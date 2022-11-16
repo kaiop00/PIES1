@@ -7,9 +7,9 @@ import org.junit.Test;
 
 import Models.User;
 import controllers.UserController;
-import exception.MissingDataException;
 import exceptions.InvalidCredentialsException;
 import exceptions.MissingCredentialsException;
+import exceptions.MissingDataException;
 
 public class UserControllerTest {
 

@@ -3,9 +3,9 @@ package controllers;
 import Models.Attendant;
 import Models.Manager;
 import Models.User;
-import exception.MissingDataException;
 import exceptions.InvalidCredentialsException;
 import exceptions.MissingCredentialsException;
+import exceptions.MissingDataException;
 
 public class UserController {
 

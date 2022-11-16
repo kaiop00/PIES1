@@ -2,6 +2,10 @@
 //import java.lang.reflect.Array;
 import java.util.Scanner;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 import DAO.ClientDAO;
 //import Database.ConnectionDb;
 //import Models.Client;
