@@ -6,14 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLVBoxMainController">
    <children>
       <MenuBar>
         <menus>
           <Menu fx:id="MenuCliente" mnemonicParsing="false" text="Clientes">
             <items>
-              <MenuItem fx:id="ConsultarTodos" mnemonicParsing="false" text="Consultar Todos" />
+              <MenuItem fx:id="ConsultarTodos" mnemonicParsing="false" onAction="#handleMenuItemCadastrosClientes" text="Consultar Todos" />
                   <MenuItem fx:id="ConsultarCliente" mnemonicParsing="false" text="Consultar Cliente" />
                   <MenuItem fx:id="IncluirCliente" mnemonicParsing="false" text="Incluir Cliente" />
                   <MenuItem fx:id="EditarCliente" mnemonicParsing="false" text="Editar Cliente" />
