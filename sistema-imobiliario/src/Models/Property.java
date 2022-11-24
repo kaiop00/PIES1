@@ -1,77 +1,78 @@
 package Models;
 
 public class Property {
-	private int id;
+	private String id;
 	private String adress;
-	private Double area;
-	private Double value;
-	private int room;
-	private int garage;
-	private Boolean isLocate;
+	private String area;
+	private String value;
+	private String room;
+	private String garage;
+	private String isLocate;
 	
-	public Property(int id, String adress, Double area, Double value, int room, int garage) {
-		super();
+	public Property() {}
+	
+	public Property(String id, String adress, String area, String value, String room, String garage, String isLocate) {
 		this.id = id;
 		this.adress = adress;
 		this.area = area;
 		this.value = value;
 		this.room = room;
 		this.garage = garage;
-		this.isLocate = false;
+		this.isLocate = isLocate;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
-	public String getAdress() {
+	public String getAddress() {
 		return adress;
 	}
 	
-	public void setAdress(String adress) {
+	public void setAddress(String adress) {
 		this.adress = adress;
 	}
 	
-	public Double getArea() {
+	public String getArea() {
 		return area;
 	}
 	
-	public void setArea(Double area) {
+	public void setArea(String area) {
 		this.area = area;
 	}
 	
-	public Double getValue() {
+	public String getValue() {
 		return value;
 	}
 	
-	public void setValue(Double value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 	
-	public int getRoom() {
+	public String getRoom() {
 		return room;
 	}
 	
-	public void setRoom(int room) {
+	public void setRoom(String room) {
 		this.room = room;
 	}
 	
-	public int getGarage() {
+	public String getGarage() {
 		return garage;
 	}
-	public void setGarage(int garage) {
+	public void setGarage(String garage) {
 		this.garage = garage;
 	}
 	
-	public Boolean getIsLocate() {
+	public String getIsLocate() {
 		return isLocate;
 	}
 	
-	public void setIsLocate(Boolean isLocate) {
+	public void setIsLocate(String isLocate) {
 		this.isLocate = isLocate;
 	}
 }
