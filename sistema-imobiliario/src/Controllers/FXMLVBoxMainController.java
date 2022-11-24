@@ -20,7 +20,7 @@ public class FXMLVBoxMainController implements Initializable{
 	@FXML
 	private MenuItem menuItemAlterarCliente;
 	@FXML
-	private MenuItem menuItemExluitCliente;
+	private MenuItem menuItemDeletarCliente;
 	@FXML
 	private AnchorPane anchorPane;
 	
@@ -32,8 +32,14 @@ public class FXMLVBoxMainController implements Initializable{
 	}
 	
 	@FXML
-	public void handleMenuItemCadastrosClientes() throws IOException {
-		AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("src/ViewSystem/FMXLAnchorPaneCadastroCliete.fxml"));
+	public void handleMenuItemTodosClientes() throws IOException {
+		AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/ViewSystem/FXMLAnchorPaneTodosClientes.fxml"));
+		anchorPane.getChildren().setAll(a);
+	}
+	
+	@FXML
+	public void handleMenuItemCadastroClientes() throws IOException {
+		AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/ViewSystem/FXMLAnchorPaneCadastroCliente.fxml"));
 		anchorPane.getChildren().setAll(a);
 	}
 }

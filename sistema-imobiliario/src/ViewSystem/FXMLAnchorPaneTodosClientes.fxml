@@ -16,17 +16,16 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLAnchorPaneTodosClientesController">
    <children>
       <SplitPane dividerPositions="0.41304347826086957" layoutX="153.0" layoutY="96.0" prefHeight="375.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TableView fx:id="TableViewCliente" layoutX="-7.0" layoutY="71.0" prefHeight="373.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TableView fx:id="tableViewClientes" layoutX="-7.0" layoutY="71.0" prefHeight="373.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="TableCollunmClienteCPF" prefWidth="75.0" text="CPF" />
-                      <TableColumn fx:id="TableColumnClienteNome" prefWidth="75.0" text="NOME" />
+                      <TableColumn fx:id="tableColumnClienteCpf" prefWidth="75.0" text="CPF" />
+                      <TableColumn fx:id="tableColumnClienteNome" prefWidth="75.0" text="NOME" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -59,20 +58,20 @@
                         <Label text="Email" GridPane.rowIndex="2" />
                         <Label text="Endereço" GridPane.rowIndex="3" />
                         <Label text="Telefone" GridPane.rowIndex="4" />
-                        <Label fx:id="LabelClienteNome" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="LabelClienteCpf" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="LabelClienteEmail" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="LabelClienteEndereco" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="LabelClienteTelefone" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="labelClienteNome" GridPane.columnIndex="1" />
+                        <Label fx:id="labelClienteCpf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="labelClienteEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="labelClienteEndereco" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="labelClienteTelefone" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
-                  <Group layoutX="86.0" layoutY="314.0">
+                  <Group layoutX="115.0" layoutY="333.0">
                      <children>
-                        <Button fx:id="ButtonClienteAlterar" layoutX="57.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Alterar" />
+                        <Button fx:id="buttonClienteAlterar" layoutX="74.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="25.0" prefWidth="64.0" text="Alterar" />
+                        <Button fx:id="buttonClienteRemover" layoutX="149.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+                        <Button fx:id="buttonClienteInserir" mnemonicParsing="false" onAction="#handleButtonIncluir" prefHeight="25.0" prefWidth="64.0" text="Inserir" />
                      </children>
                   </Group>
-                  <Button fx:id="BUttonCLienteRomover" layoutX="234.0" layoutY="316.0" mnemonicParsing="false" text="Remover" />
-                  <Button fx:id="ButtonClienteInserir" layoutX="51.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Inserir" />
                </children>
             </AnchorPane>
         </items>
