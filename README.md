@@ -2,7 +2,7 @@
 
 **Descrição:** Aplicação tem como objetivo servir como ferramenta de gerenciamento de imobiliárias desktop, controlando os imóveis disponíveis e alugados, além de gerenciar os dados dos clientes cadastrados no sistema.
 
-**Papel:** Atendente
+**Papéis:** Atendente e cliente
 
 [Tarefas da Equipe](https://www.notion.so/Tarefas-da-Equipe-3169546d28d744a5a8d095a83f64c651)
 
