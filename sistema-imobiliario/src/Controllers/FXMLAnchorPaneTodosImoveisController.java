@@ -18,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -29,6 +30,8 @@ public class FXMLAnchorPaneTodosImoveisController implements Initializable{
 		private TableColumn<Property, String> tableColumnImovelId = new TableColumn<>();
 		@FXML
 		private TableColumn<Property, String> tableColumnImovelAddress = new TableColumn<>();
+		@FXML
+		private Button buttonImovelAlugar;
 		@FXML
 		private Button buttonImovelInserir;
 		@FXML
@@ -49,6 +52,8 @@ public class FXMLAnchorPaneTodosImoveisController implements Initializable{
 		private Label labelImovelValor = new Label();
 		@FXML
 		private Label labelImovelAlugado = new Label();
+		@FXML
+		private ImageView imageViewTodosImoveis;
 		
 		private List<Property> listImoveis;
 		private ObservableList<Property> observableListImoveis;
@@ -95,6 +100,23 @@ public class FXMLAnchorPaneTodosImoveisController implements Initializable{
 	            labelImovelAlugado.setText("");
 	        }
 
+	    }
+	    
+	    @FXML
+	    public void handleButtonImoveisAlugar() throws IOException {
+	    	Property imovel = tableViewImoveis.getSelectionModel().getSelectedItem();
+	    	if(imovel != null) {
+	    		boolean buttonConfirmarCliked = showFXMLAnchorPaneAlugarImoveis(imovel);
+	    		if(buttonConfirmarCliked) {
+	    			PropertyDAO.updateProperty(imovel);
+	        		carregarTableViewImovel();
+	    		}
+	    	}else {
+	    		Alert alert = new Alert(Alert.AlertType.ERROR);
+	    		alert.setContentText("Por favor, escolha um imovel na Tabela!");
+	    		alert.show();
+	    	}
+	    	
 	    }
 	    
 	    @FXML
@@ -148,6 +170,25 @@ public class FXMLAnchorPaneTodosImoveisController implements Initializable{
 	        dialogStage.setScene(scene);
 
 	        FXMLAnchorPaneCadastroImoveisController controller = loader.getController();
+	        controller.setDialogStage(dialogStage);
+	        controller.setProperty(imovel);
+
+	        dialogStage.showAndWait();
+
+	        return controller.isButtonConfirmarClicked();
+	    }
+	    
+	    public boolean showFXMLAnchorPaneAlugarImoveis(Property imovel) throws IOException {
+	        FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(FXMLAnchorPaneAlugarImoveisController.class.getResource("/ViewSystem/FXMLAnchorPaneAlugarImoveis.fxml"));
+	        AnchorPane page = (AnchorPane) loader.load();
+
+	        Stage dialogStage = new Stage();
+	        dialogStage.setTitle("Alugar de Imóveis");
+	        Scene scene = new Scene(page);
+	        dialogStage.setScene(scene);
+
+	        FXMLAnchorPaneAlugarImoveisController controller = loader.getController();
 	        controller.setDialogStage(dialogStage);
 	        controller.setProperty(imovel);
 

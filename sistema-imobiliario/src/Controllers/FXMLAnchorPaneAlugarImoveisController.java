@@ -13,42 +13,34 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 
-public class FXMLAnchorPaneCadastroImoveisController implements Initializable{
+public class FXMLAnchorPaneAlugarImoveisController implements Initializable{
 
 		@FXML
 		private Label labelImovelId;
 		@FXML
 		private Label labelImovelEndereco;
 		@FXML
-		private Label labelImovelArea;
-		@FXML
-		private Label labelImovelQuartos;
-		@FXML
-		private Label labelImovelGaragem;
-		@FXML
 		private Label labelImovelValor;
 		@FXML
-		private Label labelImovelAlugado;		
+		private Label labelImovelAlugado;
+		@FXML
+		private Label labelImovelLocatario;
 		@FXML
 		private TextField textFieldImovelId;
 		@FXML
 		private TextField textFieldImovelEndereco;
 		@FXML
-		private TextField textFieldImovelArea;		
-		@FXML
-		private TextField textFieldImovelQuartos;
-		@FXML
-		private TextField textFieldImovelGaragem;
-		@FXML
 		private TextField textFieldImovelValor;
 		@FXML
 		private TextField textFieldImovelAlugado;
+		@FXML
+		private TextField textFieldImovelCpfLocatario;
 		@FXML
 		private Button buttonImovelConfirmar;
 		@FXML
 		private Button buttonImovelCancelar;
 		@FXML
-		private ImageView imageViewCadastroImoveis;
+		private ImageView imageViewAlugarImoveis;
 		
 		private Stage dialogStage;
 		private boolean buttonConfirmarClicked = false;
@@ -82,9 +74,6 @@ public class FXMLAnchorPaneCadastroImoveisController implements Initializable{
 			this.imovel = imovel;
 			textFieldImovelId.setText(imovel.getId());
 			textFieldImovelEndereco.setText(imovel.getAddress());
-			textFieldImovelArea.setText(imovel.getArea());
-			textFieldImovelQuartos.setText(imovel.getRoom());
-			textFieldImovelGaragem.setText(imovel.getGarage());
 			textFieldImovelValor.setText(imovel.getValue());
 			textFieldImovelAlugado.setText(imovel.getIsLocate());
 		}
@@ -94,9 +83,6 @@ public class FXMLAnchorPaneCadastroImoveisController implements Initializable{
 			if(validarEntradaDeDados()) {
 				imovel.setId(textFieldImovelId.getText());
 				imovel.setAddress(textFieldImovelEndereco.getText());
-				imovel.setArea(textFieldImovelArea.getText());
-				imovel.setRoom(textFieldImovelQuartos.getText());
-				imovel.setGarage(textFieldImovelGaragem.getText());
 				imovel.setValue(textFieldImovelValor.getText());
 				imovel.setIsLocate(textFieldImovelAlugado.getText());
 				buttonConfirmarClicked = true;
@@ -118,20 +104,14 @@ public class FXMLAnchorPaneCadastroImoveisController implements Initializable{
 	        if (textFieldImovelEndereco.getText() == null || textFieldImovelEndereco.getText().length() == 0) {
 	            errorMessage += "Endereço inválido!\n";
 	        }
-	        if (textFieldImovelArea.getText() == null || textFieldImovelArea.getText().length() == 0) {
-	            errorMessage += "Area inválido!\n";
-	        }
-	        if (textFieldImovelQuartos.getText() == null || textFieldImovelQuartos.getText().length() == 0) {
-	            errorMessage += "Quartos inválido!\n";
-	        }
-	        if (textFieldImovelGaragem.getText() == null || textFieldImovelGaragem.getText().length() == 0) {
-	            errorMessage += "Garagem inválido!\n";
-	        }
 	        if (textFieldImovelValor.getText() == null || textFieldImovelValor.getText().length() == 0) {
 	            errorMessage += "Valor inválido!\n";
 	        }
 	        if (textFieldImovelAlugado.getText() == null || textFieldImovelAlugado.getText().length() == 0) {
 	            errorMessage += "Alugado inválido!\n";
+	        }
+	        if (textFieldImovelCpfLocatario.getText() == null || textFieldImovelCpfLocatario.getText().length() == 0) {
+	            errorMessage += "Locatario inválido!\n";
 	        }
 
 	        if (errorMessage.length() == 0) {

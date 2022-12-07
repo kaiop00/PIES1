@@ -1,0 +1,4 @@
+.bodybg{
+	-fx-background-image: url(./bkgd.jpg);
+	-fx-background-size: 100% 100%;
+}

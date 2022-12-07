@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuItem;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class FXMLVBoxMainController implements Initializable{
@@ -33,6 +34,9 @@ public class FXMLVBoxMainController implements Initializable{
 	private MenuItem menuItemImoveisRemover;
 	@FXML
 	private AnchorPane anchorPane;
+	@FXML
+	private ImageView imageView;
+	
 	
 
 	@Override

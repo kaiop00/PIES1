@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class FXMLAnchorPaneCadastroClienteController implements Initializable {
@@ -39,6 +40,8 @@ public class FXMLAnchorPaneCadastroClienteController implements Initializable {
 	private Button buttonClienteConfirmar;
 	@FXML
 	private Button buttonClienteCancelar;
+	@FXML
+	private ImageView imageViewCadastroCliente;
 	
 	private Stage dialogStage;
 	private boolean buttonConfirmarClicked = false;

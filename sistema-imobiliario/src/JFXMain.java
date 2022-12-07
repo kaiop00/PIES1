@@ -13,7 +13,7 @@ public class JFXMain extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("ViewSystem/FXMLVBoxMain.fxml"));
 	
 		Scene scene = new Scene(root);
-		
+		scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 		Stage.setScene(scene);
 		Stage.setTitle("Sistema Imobiliária");
 		Stage.setResizable(false);

@@ -3,12 +3,14 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLVBoxMainController">
+<VBox id="VBoxMiain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLVBoxMainController">
    <children>
-      <MenuBar>
+      <MenuBar style="-fx-background-color: darkgray;">
         <menus>
           <Menu fx:id="menuClientes" mnemonicParsing="false" text="Clientes">
             <items>
@@ -35,6 +37,13 @@
           </Menu>
         </menus>
       </MenuBar>
-      <AnchorPane fx:id="anchorPane" prefHeight="375.0" prefWidth="600.0" />
+      <AnchorPane fx:id="anchorPane" prefHeight="375.0" prefWidth="600.0" style="-fx-background-color: darkgray;" stylesheets="@../style.css">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="375.0" fitWidth="375.0" layoutX="113.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bkgd.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
    </children>
 </VBox>

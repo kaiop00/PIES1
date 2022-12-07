@@ -18,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -45,7 +46,8 @@ public class FXMLAnchorPaneTodosClientesController implements Initializable {
 	private Label labelClienteEndereco;
 	@FXML
 	private Label labelClienteTelefone;
-	
+	@FXML
+	private ImageView imageViewTodosClientes;
 	
 	private List<Client> listClientes;
 	private ObservableList<Client> observableListClientes;
